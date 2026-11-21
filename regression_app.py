@@ -5,7 +5,7 @@ import pickle
 from sklearn.preprocessing import StandardScaler, OneHotEncoder, LabelEncoder
 import streamlit as st
 
-model = tf.keras.models.load_model('model_regression.h5')
+model = tf.keras.models.load_model('model_regression.h5', compile=False)
 
 with open("one_hot_code_Geography.pkl", 'rb') as file:
     one_hot_code_Geography=pickle.load(file)
