@@ -2,3 +2,5 @@
 .venv/
 logs/
 .gitIgnore
+/logs_Regression
+logs_Regression/
